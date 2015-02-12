@@ -40,7 +40,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'annotate'                 # Annotate models
   gem 'better_errors'            # Ruby errors
   gem 'binding_of_caller'        # Deeper errors
   gem 'mailcatcher'              # Mail Server
@@ -50,15 +49,12 @@ end
 group :test do
   gem 'capybara'                       # Simulate user
   gem 'database_cleaner'               # Clean test db
-  gem 'factory_girl_rails'             # Factories for tests
-  gem 'guard'                          # Watch project directory
-  gem 'guard-livereload'               # Reload page on save
-  gem 'guard-rspec'                    # Run specs on save
   gem 'rspec-rails'                    # Functional tests
   gem 'selenium-webdriver'             # Visually run tests
+  gem "chromedriver-helper"            # Seleniun uses Google Chrome
   gem 'simplecov'                      # See test coverage
-  gem 'webmock'                        # Fake HTTP Requests
-  gem 'vcr'                            # Handle external HTTP requests made by back-end
+  # gem 'webmock'                        # Fake HTTP Requests
+  # gem 'vcr'                            # Handle external HTTP requests made by back-end
 end
 
 group :doc do
