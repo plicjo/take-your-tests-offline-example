@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Lat:
+  = @location.lat
+%p
+  %b Lng:
+  = @location.lng
+%p
+  %b City:
+  = @location.city
+%p
+  %b State:
+  = @location.state
+%p
+  %b Country:
+  = @location.country
+
+= link_to 'Edit', edit_location_path(@location)
+\|
+= link_to 'Back', locations_path

@@ -1,0 +1,1060 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://127.0.0.1:55872/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
+      Date:
+      - Thu, 12 Feb 2015 21:12:09 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70245952679480'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:09 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session
+    body:
+      encoding: UTF-8
+      string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"chromeOptions":{"detach":true},"chrome.detach":true}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '246'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '602'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"userDataDir":"/var/folders/qr/ynr7lw9s6jnc2y0_zfyt6mt80000gn/T/.org.chromium.Chromium.4RpoqM"},"cssSelectorsEnabled":true,"databaseEnabled":false,"handlesAlerts":true,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"platform":"Mac
+        OS X","rotatable":false,"takesHeapSnapshot":true,"takesScreenshot":true,"version":"40.0.2214.111","webStorageEnabled":true}}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:10 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/url
+    body:
+      encoding: UTF-8
+      string: '{"url":"http://127.0.0.1:55872/locations/new"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '46'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":null}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":".//*[self::input | self::textarea][not(./@type
+        = ''submit'' or ./@type = ''image'' or ./@type = ''radio'' or ./@type = ''checkbox''
+        or ./@type = ''hidden'' or ./@type = ''file'')][(((./@id = ''location_lat''
+        or ./@name = ''location_lat'') or ./@placeholder = ''location_lat'') or ./@id
+        = //label[normalize-space(string(.)) = ''location_lat'']/@for)] | .//label[normalize-space(string(.))
+        = ''location_lat'']//.//*[self::input | self::textarea][not(./@type = ''submit''
+        or ./@type = ''image'' or ./@type = ''radio'' or ./@type = ''checkbox'' or
+        ./@type = ''hidden'' or ./@type = ''file'')]"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '582'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '105'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":[{"ELEMENT":"0.02468346804380417-1"}]}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/element/0.02468346804380417-1/enabled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":true}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/element/0.02468346804380417-1/name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '75'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":"input"}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/element/0.02468346804380417-1/attribute/type
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":"number"}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/element/0.02468346804380417-1/attribute/readonly
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":null}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/execute
+    body:
+      encoding: UTF-8
+      string: '{"script":"arguments[0].value = ''''","args":[{"ELEMENT":"0.02468346804380417-1"}]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '81'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":null}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/element/0.02468346804380417-1/value
+    body:
+      encoding: UTF-8
+      string: '{"value":["30.3369"]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '21'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":null}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":".//*[self::input | self::textarea][not(./@type
+        = ''submit'' or ./@type = ''image'' or ./@type = ''radio'' or ./@type = ''checkbox''
+        or ./@type = ''hidden'' or ./@type = ''file'')][(((./@id = ''location_lng''
+        or ./@name = ''location_lng'') or ./@placeholder = ''location_lng'') or ./@id
+        = //label[normalize-space(string(.)) = ''location_lng'']/@for)] | .//label[normalize-space(string(.))
+        = ''location_lng'']//.//*[self::input | self::textarea][not(./@type = ''submit''
+        or ./@type = ''image'' or ./@type = ''radio'' or ./@type = ''checkbox'' or
+        ./@type = ''hidden'' or ./@type = ''file'')]"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '582'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '105'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":[{"ELEMENT":"0.02468346804380417-2"}]}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/element/0.02468346804380417-2/enabled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":true}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/element/0.02468346804380417-2/name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '75'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":"input"}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/element/0.02468346804380417-2/attribute/type
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":"number"}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/element/0.02468346804380417-2/attribute/readonly
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":null}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/execute
+    body:
+      encoding: UTF-8
+      string: '{"script":"arguments[0].value = ''''","args":[{"ELEMENT":"0.02468346804380417-2"}]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '81'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":null}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/element/0.02468346804380417-2/value
+    body:
+      encoding: UTF-8
+      string: '{"value":["81.6614"]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '21'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":null}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":".//input[./@type = ''submit'' or ./@type
+        = ''reset'' or ./@type = ''image'' or ./@type = ''button''][((./@id = ''Create
+        Location'' or ./@value = ''Create Location'') or ./@title = ''Create Location'')]
+        | .//input[./@type = ''image''][./@alt = ''Create Location''] | .//button[(((./@id
+        = ''Create Location'' or ./@value = ''Create Location'') or normalize-space(string(.))
+        = ''Create Location'') or ./@title = ''Create Location'')] | .//input[./@type
+        = ''image''][./@alt = ''Create Location'']"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '490'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '105'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":[{"ELEMENT":"0.02468346804380417-3"}]}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/element/0.02468346804380417-3/enabled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":true}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:12 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?language=en&latlng=30.3369,81.6614&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 12 Feb 2015 21:12:13 GMT
+      Expires:
+      - Fri, 13 Feb 2015 21:12:13 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 80:quic,p=0.08
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Limi",
+                       "short_name" : "Limi",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Karnali",
+                       "short_name" : "Karnali",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Mid-Western Region",
+                       "short_name" : "Mid-Western Region",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Nepal",
+                       "short_name" : "NP",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Limi, Nepal",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 30.4470458,
+                          "lng" : 81.8910599
+                       },
+                       "southwest" : {
+                          "lat" : 30.1488382,
+                          "lng" : 81.333332
+                       }
+                    },
+                    "location" : {
+                       "lat" : 30.29,
+                       "lng" : 81.64999999999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 30.4470458,
+                          "lng" : 81.8910599
+                       },
+                       "southwest" : {
+                          "lat" : 30.1488382,
+                          "lng" : 81.333332
+                       }
+                    }
+                 },
+                 "types" : [ "locality", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "21000",
+                       "short_name" : "21000",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "Nepal",
+                       "short_name" : "NP",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "21000, Nepal",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 30.44896959999999,
+                          "lng" : 82.53204350000001
+                       },
+                       "southwest" : {
+                          "lat" : 29.6182365,
+                          "lng" : 81.2610626
+                       }
+                    },
+                    "location" : {
+                       "lat" : 30.0051731,
+                       "lng" : 81.9534815
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 30.44896959999999,
+                          "lng" : 82.53204350000001
+                       },
+                       "southwest" : {
+                          "lat" : 29.6182365,
+                          "lng" : 81.2610626
+                       }
+                    }
+                 },
+                 "types" : [ "postal_code" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Humla",
+                       "short_name" : "Humla",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Karnali",
+                       "short_name" : "Karnali",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Mid-Western Region",
+                       "short_name" : "Mid-Western Region",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Nepal",
+                       "short_name" : "NP",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Humla, Nepal",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 30.4238096,
+                          "lng" : 82.7256775
+                       },
+                       "southwest" : {
+                          "lat" : 29.47547,
+                          "lng" : 81.2631227
+                       }
+                    },
+                    "location" : {
+                       "lat" : 30.0051731,
+                       "lng" : 81.9534815
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 30.4238096,
+                          "lng" : 82.7256775
+                       },
+                       "southwest" : {
+                          "lat" : 29.47547,
+                          "lng" : 81.2631227
+                       }
+                    }
+                 },
+                 "types" : [ "administrative_area_level_3", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Karnali",
+                       "short_name" : "Karnali",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Mid-Western Region",
+                       "short_name" : "Mid-Western Region",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Nepal",
+                       "short_name" : "NP",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Karnali, Nepal",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 30.4333931,
+                          "lng" : 83.6897499
+                       },
+                       "southwest" : {
+                          "lat" : 28.7097791,
+                          "lng" : 81.255875
+                       }
+                    },
+                    "location" : {
+                       "lat" : 29.3862555,
+                       "lng" : 82.38857829999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 30.4333931,
+                          "lng" : 83.6897499
+                       },
+                       "southwest" : {
+                          "lat" : 28.7097791,
+                          "lng" : 81.255875
+                       }
+                    }
+                 },
+                 "types" : [ "administrative_area_level_2", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Mid-Western Region",
+                       "short_name" : "Mid-Western Region",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Nepal",
+                       "short_name" : "NP",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Mid-Western Region, Nepal",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 30.4333931,
+                          "lng" : 83.6897499
+                       },
+                       "southwest" : {
+                          "lat" : 27.682508,
+                          "lng" : 80.98443600000002
+                       }
+                    },
+                    "location" : {
+                       "lat" : 29.0164923,
+                       "lng" : 82.38857829999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 30.4333931,
+                          "lng" : 83.6897499
+                       },
+                       "southwest" : {
+                          "lat" : 27.682508,
+                          "lng" : 80.98443600000002
+                       }
+                    }
+                 },
+                 "types" : [ "administrative_area_level_1", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Nepal",
+                       "short_name" : "NP",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Nepal",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 30.4469452,
+                          "lng" : 88.1992978
+                       },
+                       "southwest" : {
+                          "lat" : 26.3477794,
+                          "lng" : 80.0522222
+                       }
+                    },
+                    "location" : {
+                       "lat" : 28.394857,
+                       "lng" : 84.12400799999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 30.4469452,
+                          "lng" : 88.1992978
+                       },
+                       "southwest" : {
+                          "lat" : 26.3477794,
+                          "lng" : 80.0522222
+                       }
+                    }
+                 },
+                 "types" : [ "country", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:13 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/element/0.02468346804380417-3/click
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/json
+      Content-Length:
+      - '2'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":null}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:13 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":"/html"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '33'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '105'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":[{"ELEMENT":"0.01109285349957645-1"}]}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:13 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/914b75dfddd9a067dde651263e781195/execute
+    body:
+      encoding: UTF-8
+      string: '{"script":"return arguments[0].textContent","args":[{"ELEMENT":"0.01109285349957645-1"}]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '89'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '281'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"914b75dfddd9a067dde651263e781195","status":0,"value":"\n\n\nTake
+        Your Tests Offline\n\n\n\n\n\n\n\nSuccessfully created a new location!\n\nLat:\n30.3369\n\n\nLng:\n81.6614\n\n\nCity:\nLimi\n\n\nState:\nMid-Western
+        Region\n\n\nCountry:\nNP\n\nEdit\n|\nBack\n\n\n\n\n"}'
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 21:12:13 GMT
+recorded_with: VCR 2.9.3

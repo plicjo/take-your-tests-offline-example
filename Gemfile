@@ -10,7 +10,7 @@ gem 'pg'         # Postgres Database
 gem 'autoprefixer-rails'          # Automatically Apply CSS Browser Prefixes
 gem 'bootstrap-sass', '~> 3.3.2'  # Bootstrap
 gem 'coffee-rails'                # CoffeeScript
-# gem 'geocoder'                    # Geocoding
+gem 'geocoder'                    # Geocoding
 gem 'jquery-rails'                # jQuery
 gem 'jquery-turbolinks'           # Ensure turbolinks works
 gem 'rails-console-tweaks'        # Loads the :console group
@@ -53,8 +53,8 @@ group :test do
   gem 'selenium-webdriver'             # Visually run tests
   gem "chromedriver-helper"            # Seleniun uses Google Chrome
   gem 'simplecov'                      # See test coverage
-  # gem 'webmock'                        # Fake HTTP Requests
-  # gem 'vcr'                            # Handle external HTTP requests made by back-end
+  gem 'webmock'                        # Fake HTTP Requests
+  gem 'vcr'                            # Handle external HTTP requests made by back-end
 end
 
 group :doc do
