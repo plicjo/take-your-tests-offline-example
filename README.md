@@ -1,3 +1,10 @@
 # Take Your Tests Offline
 
-## You'll need RVM
+###Testing Backend API calls offline with VCR example app
+
+* Rspec
+* VCR 
+* Webmock
+* Capybara
+
+You'll need RVM
