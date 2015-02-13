@@ -1,6 +1,6 @@
 # Take Your Tests Offline
 
-###Testing Backend API calls offline with VCR example app
+### Example App testing Backend API calls offline with VCR 
 
 * Rspec
 * VCR 
